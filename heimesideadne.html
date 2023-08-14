@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELKOMMEN</title>
+
+    <link rel="stylesheet" href="heimesidestyles.css">
+</head>
+<body>
+    <h1>Ådnes plass</h1>
+
+  
+    
+<button onclick="whois()">Hvem er jeg?</button>
+<button onclick="interest()">Interesser</button>
+<button onclick="thisguy()">Bilde</button>
+
+
+
+<div>
+    <div id="hvem"></div>
+
+    <div id="interesse"></div>
+    <div id="foto" class="bilde">
+        
+    </div>
+    <div></div>
+
+</div>
+
+
+
+<script>
+    function whois(){
+        document.getElementById('hvem').innerHTML= /*HTML*/`
+        Hei, jeg heter Ådne, er 35 år, men ikke voksen. Jeg bor på Bryne, som ligger sør for Klepp og nord for Nærbø. Det er en fin plass viss du liker vind, regn og hevdalukt.
+`}
+    function interest() {
+        document.getElementById('interesse').innerHTML=/*HTML*/`
+        <ul>
+            <li>Liverpool og Premier League</li>
+            <li>Styrketrening</li>
+            <li>Rocket League og Heroes of Newerth</li>
+            <li>Familien min</li>
+        </ul>
+        `}
+    function thisguy() {
+        document.getElementById('foto').innerHTML=/*HTML*/`
+        <img src="img/aadne.jpg" alt="Bilde">
+        `
+    }
+    
+</script>
+
+
+</body>
+</html>
